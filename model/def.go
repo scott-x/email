@@ -2,7 +2,7 @@ package model
 
 type EmailParam struct {
 	// ServerHost 邮箱服务器地址，如腾讯企业邮箱为smtp.exmail.qq.com
-	ServerHost string `json:"server_host`
+	ServerHost string `json:"server_host"`
 	// ServerPort 邮箱服务器端口，如腾讯企业邮箱为465
 	ServerPort int `json:"server_port"`
 	// FromEmail　发件人邮箱地址

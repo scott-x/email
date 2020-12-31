@@ -7,7 +7,7 @@ import (
 )
 
 func ParseConfig() (*model.EmailParam,error){
-	bs, err:=ioutil.ReadFile("config.json")
+	bs, err:=ioutil.ReadFile("email.json")
 	if err!=nil {
 		return nil,err
 	}

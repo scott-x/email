@@ -28,12 +28,10 @@ func init() {
 	}
 	toers := []string{}
 
-	serverHost := config.ServerHost
-	serverPort := config.ServerPort
-	fromEmail := config.FromEmail
-	fromPasswd := config.FromPasswd
-
-	log.Println(serverHost,serverPort,fromEmail,fromPasswd)
+	serverHost = config.ServerHost
+	serverPort = config.ServerPort
+	fromEmail = config.FromEmail
+	fromPasswd = config.FromPasswd
 	m = gomail.NewMessage()
 
 	if len(config.Toers) == 0 {
