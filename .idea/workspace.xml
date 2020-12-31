@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f491e829-1701-4137-b17c-cba3c82e96f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+    <list default="true" id="f491e829-1701-4137-b17c-cba3c82e96f4" name="Default Changelist" comment="v1.0.0">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/email.go" beforeDir="false" afterPath="$PROJECT_DIR$/email.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/util.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="v1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0.0" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -76,5 +78,17 @@
       <screen x="0" y="25" width="1792" height="1015" />
     </state>
     <state x="682" y="379" key="#Go_Modules/0.25.1792.1015@0.25.1792.1015" timestamp="1609410266930" />
+    <state x="642" y="248" key="RollbackChangesDialog" timestamp="1609411574427">
+      <screen x="0" y="25" width="1792" height="1015" />
+    </state>
+    <state x="642" y="248" key="RollbackChangesDialog/0.25.1792.1015@0.25.1792.1015" timestamp="1609411574427" />
+    <state x="482" y="278" key="Vcs.Push.Dialog.v2" timestamp="1609411616305">
+      <screen x="0" y="25" width="1792" height="1015" />
+    </state>
+    <state x="482" y="278" key="Vcs.Push.Dialog.v2/0.25.1792.1015@0.25.1792.1015" timestamp="1609411616305" />
+    <state x="683" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609411581763">
+      <screen x="0" y="25" width="1792" height="1015" />
+    </state>
+    <state x="683" y="459" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1792.1015@0.25.1792.1015" timestamp="1609411581763" />
   </component>
 </project>
