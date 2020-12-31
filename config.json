@@ -1,0 +1,9 @@
+{
+	"token":"",
+	"server_host":"",
+	"server_port":465,
+	"from_email":"",
+	"from_passwd":"",
+	"to_ers":"",
+	"cc_ers":""
+}

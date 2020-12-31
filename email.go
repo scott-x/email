@@ -2,6 +2,9 @@ package email
 
 import (
 	"github.com/go-gomail/gomail"
+	"github.com/scott-x/email/model"
+	"github.com/scott-x/email/util"
+	"log"
 	"strings"
 )
 
@@ -27,21 +30,31 @@ var serverPort int
 
 var m *gomail.Message
 
-func InitEmail(ep *EmailParam) {
+var (
+	config *model.EmailParam
+	err error
+)
+func init() {
+	config, err = util.ParseConfig()
+	if err!=nil {
+		log.Printf("init configuration error: %s\n",err)
+		panic(err)
+	}
 	toers := []string{}
 
-	serverHost = ep.ServerHost
-	serverPort = ep.ServerPort
-	fromEmail = ep.FromEmail
-	fromPasswd = ep.FromPasswd
+	serverHost = config.ServerHost
+	serverPort = config.ServerPort
+	fromEmail = config.FromEmail
+	fromPasswd = config.FromPasswd
 
+	log.Panicln(serverHost,serverPort,fromEmail,fromPasswd)
 	m = gomail.NewMessage()
 
-	if len(ep.Toers) == 0 {
+	if len(config.Toers) == 0 {
 		return
 	}
 
-	for _, tmp := range strings.Split(ep.Toers, ",") {
+	for _, tmp := range strings.Split(config.Toers, ",") {
 		toers = append(toers, strings.TrimSpace(tmp))
 	}
 
@@ -49,8 +62,8 @@ func InitEmail(ep *EmailParam) {
 	m.SetHeader("To", toers...)
 
 	//抄送列表
-	if len(ep.CCers) != 0 {
-		for _, tmp := range strings.Split(ep.CCers, ",") {
+	if len(config.CCers) != 0 {
+		for _, tmp := range strings.Split(config.CCers, ",") {
 			toers = append(toers, strings.TrimSpace(tmp))
 		}
 		m.SetHeader("Cc", toers...)
